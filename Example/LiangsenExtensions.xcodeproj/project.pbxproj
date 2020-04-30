@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* LiangsenExtensions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiangsenExtensions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		652154F3136ABF5E827AEC30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		652154F3136ABF5E827AEC30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7B9BDC340EAC6F09570CAF33 /* Pods_LiangsenExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiangsenExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A429CBA7F13924A2BCF72256 /* LiangsenExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LiangsenExtensions.podspec; path = ../LiangsenExtensions.podspec; sourceTree = "<group>"; };
+		A429CBA7F13924A2BCF72256 /* LiangsenExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LiangsenExtensions.podspec; path = ../LiangsenExtensions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B2EBB779E7115103D519DCB9 /* Pods-LiangsenExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiangsenExtensions_Example.debug.xcconfig"; path = "Target Support Files/Pods-LiangsenExtensions_Example/Pods-LiangsenExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BB45F158C1530324DCCA3982 /* Pods-LiangsenExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiangsenExtensions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LiangsenExtensions_Tests/Pods-LiangsenExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E5CF366C99465EE072E8A81F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E5CF366C99465EE072E8A81F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				BB45F158C1530324DCCA3982 /* Pods-LiangsenExtensions_Tests.debug.xcconfig */,
 				30DB613C27602B00F51C4471 /* Pods-LiangsenExtensions_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = K8ETH5Y5NB;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +314,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LiangsenExtensions_Example/Pods-LiangsenExtensions_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LiangsenExtensions/LiangsenExtensions.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LiangsenExtensions.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +481,7 @@
 			baseConfigurationReference = B2EBB779E7115103D519DCB9 /* Pods-LiangsenExtensions_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8ETH5Y5NB;
 				INFOPLIST_FILE = LiangsenExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +497,7 @@
 			baseConfigurationReference = 504A10DF0FB7FB99C383F228 /* Pods-LiangsenExtensions_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8ETH5Y5NB;
 				INFOPLIST_FILE = LiangsenExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

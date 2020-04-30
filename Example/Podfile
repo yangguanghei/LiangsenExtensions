@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'LiangsenExtensions_Example' do
   pod 'LiangsenExtensions', :path => '../'
+  pod 'Kingfisher'
 
   target 'LiangsenExtensions_Tests' do
     inherit! :search_paths
