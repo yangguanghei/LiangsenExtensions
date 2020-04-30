@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LiangsenExtensions_Example' do
+  pod 'LiangsenExtensions', :path => '../'
+
+  target 'LiangsenExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
